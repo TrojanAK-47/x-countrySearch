@@ -38,9 +38,9 @@ const handleChange=(e)=>{
 return <>
 
 <div className={styles.input}><input type="text" onChange={handleChange}  /></div>
-<div className={styles.countryCard}>
+<div >
 <div className={styles.container}>
-    {/* {arr.map(ele=><Card/>)} */}
+   
    
     {filteredCountries.map(country=><Card image={country.flags.png} name={country.name.common} key={country.name.common}/>)}
 </div>
